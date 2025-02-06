@@ -1,0 +1,131 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <style>
+        body {
+            font-family: serif;
+            font-size: 11px;
+        }
+
+        .sdate {
+            width: 150px;
+        }
+
+        .stable tr td,
+        th {
+            border: 1px solid gray;
+        }
+
+        @page {
+            margin: 30px 30px 40px 30px;
+        }
+
+        #header {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            text-align: center;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #footer .page:after {
+            content: counter(page, upper-roman);
+        }
+
+        body {
+            background-image: url(https://edu.kalasalingam.ac.in/images/klu_logo.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        table {
+            page-break-inside: auto;
+            font-family: serif;
+        }
+
+        tr {
+            page-break-inside: avoid;
+            page-break-after: auto
+        }
+
+        thead {
+            display: table-header-group
+        }
+
+        tfoot {
+            display: table-footer-group
+        }
+
+        .bgred {
+            background: red;
+            color: #fff;
+        }
+
+        @media print {
+            table.border tr td {
+                border: 1px solid #666;
+                color: #000;
+            }
+
+            table.border tr th {
+                border: 1px solid #888888;
+                background-color: #f5bb7b;
+            }
+
+            .bottom-color {
+                display: block;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: 10px;
+                ;
+                border-top: 2px solid #f2bc7a;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagecontainer" style="width:100%;margin:0px auto;display:block;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <thead>
+                <tr>
+                    <td align="center" style="font-size:16px;font-weight:bold;">KALASALINGAM ACADEMY OF RESEARCH AND
+                        EDUCATION</td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-size:16px;font-weight:bold;">OFFICE OF THE CONTROLLER OF EXAMINATIONS
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <center>Verification Details </center>
+        <br>
+        <table width="100%" border="1" cellspacing="0" cellpadding="4" id="table_data">
+            <thead>
+                <tr>
+                    <th width="30px" rowspan="2">S.no</th>
+                    <th rowspan="2">Register.No.</th>
+                    <th rowspan="2">Student Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>9910004538</td>
+                    <td>TUMU RAJASEKHAR REDDY</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
